@@ -1,0 +1,18 @@
+6. 对于以下代码，说法正确的是____A_____。
+package homework.ch9.p1; 
+public class A { 
+private int i = 0; 
+protected int j = 0; 
+} 
+package homework.ch9.p2; 
+import homework.ch9.p1.A; 
+public class B extends A { 
+public void m() { new A().j = 10; this.j = 10; } }
+A．new A().j = 10; 有编译错误，在方法 m 里无法访问 new A().j ;this.j 无编译错误，在方法 m 里可以访问 this.j;  
+B．new A().j = 10; 无编译错误，在方法 m 里可以访问 new A().j ;this.j 有编译错误，在方法 m 里不可以访问 this.j; 
+C．new A().j = 10; 无编译错误，在方法 m 里可以访问 new A().j ;this.j 无编译错误，在方法 m 里可以访问 this.j;  
+D．new A().j = 10; 有编译错误，在方法 m 里不可以访问 new B().j ;this.j 有编译错误，在方法 m 里不可以访问 this.j;
+
+
+
+double类型应用5.0初始化

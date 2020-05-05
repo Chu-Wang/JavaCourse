@@ -1,0 +1,5 @@
+一、2. (1) Class<? extends PolyGon> clz4;
+
+一、3.（2）（3）
+
+三、1.ABDG 3.ABCD 
