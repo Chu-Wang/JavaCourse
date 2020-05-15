@@ -11,7 +11,6 @@ public class Exercise02_06 {
         System.out.print("Enter an integer between 0 and 1000: ");
         int number = input.nextInt();
         int temp = number;
-        //第二章没有while
         int sum = 0;
         while(temp != 0){
             int digit = temp % 10;
