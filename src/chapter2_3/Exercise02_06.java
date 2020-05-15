@@ -10,13 +10,14 @@ public class Exercise02_06 {
         // 读取一个数字
         System.out.print("Enter an integer between 0 and 1000: ");
         int number = input.nextInt();
+        int temp = number;
         //第二章没有while
-        int lastDigit = number % 10;
-        int remainingNumber = number / 10;
-        int secondLastDigit = remainingNumber % 10;
-        remainingNumber = remainingNumber / 10;
-        int thirdLastDigit = remainingNumber % 10;
-        int sum = lastDigit + secondLastDigit + thirdLastDigit;
+        int sum = 0;
+        while(temp != 0){
+            int digit = temp % 10;
+            sum += digit;
+            temp /= 10;
+        }
         System.out.println("The sum of all digits in " + number + " is " + sum);
     }
 }
